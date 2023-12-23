@@ -32,3 +32,5 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 1. Une fois le téléchargement terminé, allez le chercher dans l'Explorateur de fichiers. Extrayez le fichier zip dans le dossier que vous avez créé à l'étape 2.
 
 1. Ouvrez votre menu Démarrer et tapez "environnement". La première chose qui apparaît devrait être l'option Editer les variables d'environnement du système. Cliquez sur cette option et vous devriez voir cette fenêtre.
+   <img width="307" alt="environnement" src="https://github.com/vessoutraore/Terraform/assets/126578500/4de690f8-9e1b-4717-b1f9-d8765b4eb0bc">
+
