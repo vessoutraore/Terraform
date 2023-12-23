@@ -1,5 +1,5 @@
 # Terraform
-Terraform with AWS &amp; GCP HandsOn Labs. Infrastructure as a Code, Terraform Associate Certification with just ONE Course
+Terraform avec AWS & GCP HandsOn Labs. Infrastructure as a Code, Terraform Associate Certification avec un seul cours
 
 ## Installer Terraform sur MacOS / Windows
 ### Installer Terraform sur Mac Machine -
