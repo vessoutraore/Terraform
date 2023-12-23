@@ -10,7 +10,7 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 
 1. brew install jq
 1. brew install wget
-1. cd ~
+1. cd 
 1. version=$(curl https://api.github.com/repos/hashicorp/terraform/releases/latest --silent | jq ".tag_name" -r)
 1. version=$(echo $version | sed 's/v//g') # get rid of 'v' from version number
 1. echo "Installing Terraform $version."
