@@ -37,7 +37,7 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 
 1. Cliquez sur Variables d'environnement... en bas et vous verrez ceci
 
-<img width="446" alt="variableenv" src="https://github.com/vessoutraore/Terraform/assets/126578500/6bc11dcf-d72c-402f-a8f6-039a4cc30b0d">
+<img width="446" alt="variableenv" src="https://github.com/vessoutraore/Terraform/assets/126578500/2603b146-f9b7-480e-8816-c55c184fa6b4">
 
 1. Dans la section inférieure où il est question de variables système, trouvez une variable appelée Chemin **path** et cliquez sur Modifier. Vous verrez alors une liste d'endroits où trouver les binaires dont Windows peut avoir besoin pour une raison ou une autre.
 
@@ -50,6 +50,8 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 1. Vérifiez que l'installation a réussi en entrant terraform --version. S'il renvoie une version, vous êtes prêt à partir
 
    <img width="674" alt="terraformversion" src="https://github.com/vessoutraore/Terraform/assets/126578500/a7991de2-6014-47b6-aae1-7ce221cbaeb4">
+
+   @vessoutraore :+1: Looks great - it's ready to go ! :shipit:
 
 
 
