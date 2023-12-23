@@ -45,8 +45,12 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 
 <img width="413" alt="path" src="https://github.com/vessoutraore/Terraform/assets/126578500/9b1d3bd0-abed-4eb3-b74e-4dbb88835057">
 
+1.  Cliquez sur OK dans chacun des menus que vous avez ouverts jusqu'à ce qu'il n'y en ait plus.
 
-   
+1. Vérifiez que l'installation a réussi en entrant terraform --version. S'il renvoie une version, vous êtes prêt à partir
+
+   <img width="674" alt="terraformversion" src="https://github.com/vessoutraore/Terraform/assets/126578500/a7991de2-6014-47b6-aae1-7ce221cbaeb4">
+
 
 
    
