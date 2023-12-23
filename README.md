@@ -10,7 +10,7 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 
 1. brew install jq
 1. brew install wget
-1. cd¬
+1. cd~
 1. version=$(curl https://api.github.com/repos/hashicorp/terraform/releases/latest --silent | jq ".tag_name" -r)
 1. version=$(echo $version | sed 's/v//g') # get rid of 'v' from version number
 1. echo "Installing Terraform $version."
@@ -23,7 +23,7 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 1. rm "terraform_$(echo $version)_darwin_amd64.zip"
 1. echo "Install files cleaned up."
 
-## Installer Terraform sur Windows 10 -
+### Installer Terraform sur Windows 10 -
 
 1. Téléchargez la version appropriée de Terraform à partir de la  [page de téléchargement de HashiCorp](https://developer.hashicorp.com/terraform/install). Dans mon cas, il s'agit de la version Windows 64 bits.
 
