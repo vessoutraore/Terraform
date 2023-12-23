@@ -86,4 +86,7 @@ Voici une explication ligne par ligne :
 
 NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et gérer des ressources dans les environnements AWS et Azure respectivement, lors de l'exécution des scripts Terraform associés.
    
+3. Pour ce faire, je vais créer un répertoire nommé 'providers', y inclure un fichier 'main.tf' et y insérer le code mentionné ci-dessous.
+
+   <img width="797" alt="mkdirproviders" src="https://github.com/vessoutraore/Terraform/assets/126578500/c09a5aa0-c612-477a-ba1f-adf73d5ec244">
 
