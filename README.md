@@ -54,7 +54,36 @@ Pour installer Terraform sur un ordinateur MAC, il suffit de copier-coller le sc
 @vessoutraore :+1: :smiling_face_with_three_hearts: Looks great - it's ready to go ! :shipit:
 
 
+## Commence par les bases de terraform
 
+Admettez que vous avez déjà le fichier main.tf dont l'explication du contenu est le suivant: 
 
+Le code fourni est écrit en langage HashiCorp Configuration Language (HCL) et est utilisé pour définir la configuration des fournisseurs (providers) dans Terraform. Les fournisseurs sont des plugins qui permettent à Terraform d'interagir avec différentes API de services cloud ou d'autres types d'infrastructures.
+
+Voici une explication ligne par ligne :
+
+1. **Configurer le fournisseur AWS :**
+   ```hcl
+   provider "aws" {
+       version = "3.53.0"
+       region  = "us-east-1"
+   }
+   ```
+   - `provider "aws"` : Cela indique à Terraform que vous configurez un fournisseur AWS.
+   - `version = "3.53.0"` : Spécifie la version du plugin AWS à utiliser. Dans cet exemple, la version 3.53.0 est utilisée.
+   - `region = "us-east-1"` : Indique la région AWS à utiliser pour les ressources créées. Ici, c'est "us-east-1" (Virginie du Nord).
+
+2. **Configurer le fournisseur Microsoft Azure :**
+   ```hcl
+   provider "azurerm" {
+       version = "2.72.0"
+       features {}
+   }
+   ```
+   - `provider "azurerm"` : Cela indique à Terraform que vous configurez un fournisseur Azure.
+   - `version = "2.72.0"` : Spécifie la version du plugin Azure à utiliser. Dans cet exemple, la version 2.72.0 est utilisée.
+   - `features {}` : Cette section permet de spécifier des fonctionnalités spécifiques du fournisseur Azure. Dans cet exemple, elle est laissée vide, ce qui signifie qu'aucune fonctionnalité spécifique n'est activée.
+
+NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et gérer des ressources dans les environnements AWS et Azure respectivement, lors de l'exécution des scripts Terraform associés.
    
 
