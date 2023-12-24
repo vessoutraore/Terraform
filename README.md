@@ -88,5 +88,8 @@ NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et g�
    
 3. Pour ce faire, je vais créer un répertoire nommé 'providers', y inclure un fichier 'main.tf' et y insérer le code mentionné ci-dessous.
 
-   <img width="797" alt="mkdirproviders" src="https://github.com/vessoutraore/Terraform/assets/126578500/c09a5aa0-c612-477a-ba1f-adf73d5ec244">
+<img width="899" alt="code" src="https://github.com/vessoutraore/Terraform/assets/126578500/25641c20-adcf-4295-b5e9-f6d69dfb4dbc">
+
+<img width="761" alt="providerscode" src="https://github.com/vessoutraore/Terraform/assets/126578500/3bc4cfc3-ac59-4d15-b780-7f6705543370">
+
 
