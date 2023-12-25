@@ -137,3 +137,18 @@ Puis donnez lui une autorisation comme suit :
 8. Enfin cliquez sur créer un utilisateur en télécharger vos informations ou à défaut envoyez les informations par email.
 
 <img width="636" alt="télécharger" src="https://github.com/vessoutraore/Terraform/assets/126578500/1102fa8e-f2f5-4660-860e-284c025ae03b">
+
+### Configuration des règles entrantes pour le trafic entrant qui est autorisé à atteindre l'instance.
+
+1. Dans VPC puis groupe de sécurité
+<img width="586" alt="GroupSecurity" src="https://github.com/vessoutraore/Terraform/assets/126578500/64d45d7e-116e-4f86-906b-e233f6884e7d">
+
+<img width="749" alt="R1" src="https://github.com/vessoutraore/Terraform/assets/126578500/a4ca5d63-2d26-46d3-b66e-c73db8d695ad">
+
+2. Ajoutez 'Tout trafic' et votre adresse ip
+
+<img width="923" alt="Touttrafic" src="https://github.com/vessoutraore/Terraform/assets/126578500/c31b5993-3cbc-48b2-9ded-f32d65755999">
+
+3. Enfin cliquez enregistrer les règles.
+
+
