@@ -151,4 +151,33 @@ Puis donnez lui une autorisation comme suit :
 
 3. Enfin cliquez enregistrer les règles.
 
+## Création d'une machine à l'aide de terraform
 
+Pour Ce faire vous allez utiliser ce code Terraform pour configurer un fournisseur AWS et crée une instance EC2 dans la région "us-east-1" en utilisant une AMI spécifique et un type d'instance "t2.micro". voici l'explication claire du code :
+
+1. **Configurer le fournisseur AWS :**
+   ```hcl
+   provider "aws" {
+       version    = "3.53.0"
+       access_key = "ACCESS KEY"
+       secret_key = "SECRET_KEY"
+       region     = "us-east-1"
+   }
+   ```
+   - `provider "aws"` : Indique que vous configurez un fournisseur AWS.
+   - `version = "3.53.0"` : Spécifie la version du plugin AWS à utiliser.
+   - `access_key` et `secret_key` : Ces champs contiennent les clés d'accès (access key) et secrètes (secret key) permettant à Terraform d'authentifier votre accès à AWS. Notez que stocker les clés de cette manière n'est généralement pas recommandé pour des raisons de sécurité.
+   - `region = "us-east-1"` : Indique la région AWS dans laquelle les ressources seront créées.
+
+2. **Créer une instance EC2 :**
+   ```hcl
+   resource "aws_instance" "MyFirstInstnace" {
+     ami           = "ami-0b0ea68c435eb488d"
+     instance_type = "t2.micro"
+   }
+   ```
+   - `resource "aws_instance" "MyFirstInstnace"` : Définit une ressource AWS de type "aws_instance" avec le nom logique "MyFirstInstnace". Cela permet de référencer cette instance dans d'autres parties du code Terraform.
+   - `ami = "ami-0b0ea68c435eb488d"` : Spécifie l'AMI (Amazon Machine Image) à utiliser pour l'instance. Dans cet exemple, il s'agit d'une AMI spécifique.
+   - `instance_type = "t2.micro"` : Indique le type d'instance EC2 à créer, ici une instance de type "t2.micro". C'est un type d'instance de faible capacité destiné à un usage léger.
+
+pour l'ami, vous pouvez consulter le lien suivant : https://cloud-images.ubuntu.com/locator/ec2/ 
