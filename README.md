@@ -92,8 +92,9 @@ NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et g�
 
 <img width="761" alt="providerscode" src="https://github.com/vessoutraore/Terraform/assets/126578500/3bc4cfc3-ac59-4d15-b780-7f6705543370">
 
-4. Ensuite tu exécute cette commande : **$ export TF_LOG="TRACE"**
-5. Ensuite l'initialiser le repertoire de travail de terraform en utilisant la comme : **$ terraform init**
+4. Ensuite tu exécute cette commande :
+'''$ export TF_LOG="TRACE"'''
+6. Ensuite l'initialiser le repertoire de travail de terraform en utilisant la comme : **$ terraform init**
 
 
 ## Configuration d'AWS pour terraform 
