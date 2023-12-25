@@ -206,4 +206,6 @@ Une fois exécuté, vous pouvez aller dans la EC2 d'aws pour votre l'instance qu
 
 <img width="779" alt="creationdinstance" src="https://github.com/vessoutraore/Terraform/assets/126578500/fba28548-dc66-4a9f-a5bc-d4509f0dab9e">
 
+Pour la détruire, on utilise la commande : **terraform destroy**
 
+<img width="744" alt="destroy" src="https://github.com/vessoutraore/Terraform/assets/126578500/09bb9f78-0b45-45d3-96ce-90393e274e65">
