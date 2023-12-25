@@ -92,8 +92,7 @@ NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et g�
 
 <img width="761" alt="providerscode" src="https://github.com/vessoutraore/Terraform/assets/126578500/3bc4cfc3-ac59-4d15-b780-7f6705543370">
 
-4. Ensuite tu exécute cette commande :
-'''$ export TF_LOG="TRACE"'''
+4. Ensuite tu exécute cette commande : **$ export TF_LOG="TRACE"**
 6. Ensuite l'initialiser le repertoire de travail de terraform en utilisant la comme : **$ terraform init**
 
 
@@ -181,4 +180,24 @@ Pour Ce faire vous allez utiliser ce code Terraform pour configurer un fournisse
    - `ami = "ami-0b0ea68c435eb488d"` : Spécifie l'AMI (Amazon Machine Image) à utiliser pour l'instance. Dans cet exemple, il s'agit d'une AMI spécifique.
    - `instance_type = "t2.micro"` : Indique le type d'instance EC2 à créer, ici une instance de type "t2.micro". C'est un type d'instance de faible capacité destiné à un usage léger.
 
-pour l'ami, vous pouvez consulter le lien suivant : https://cloud-images.ubuntu.com/locator/ec2/ 
+pour l'ami, vous pouvez consulter le lien suivant : https://cloud-images.ubuntu.com/locator/ec2/
+
+### Création d'une clé d'accès AWS pour terraform
+1. Rendez-vous dans la console puis dans utilisateurs
+   
+<img width="909" alt="Creationdunekey" src="https://github.com/vessoutraore/Terraform/assets/126578500/c99a786a-664c-4996-af14-3c4f9216d4a5">
+
+2. Cliquez sur créer une clé d'accès
+
+<img width="759" alt="key" src="https://github.com/vessoutraore/Terraform/assets/126578500/8eac5021-23cc-4e6b-9eae-05f2f7dda3e3">
+
+<img width="733" alt="key1" src="https://github.com/vessoutraore/Terraform/assets/126578500/6d7246f1-548f-41d5-8a60-eeec05e5f07f">
+
+3. Cliquez enfin sur créer une clé
+
+<img width="919" alt="key2" src="https://github.com/vessoutraore/Terraform/assets/126578500/8909f868-458d-47d4-93f3-fce50a835a59">
+
+4. Puis terminer 
+
+
+
