@@ -93,9 +93,47 @@ NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et g�
 <img width="761" alt="providerscode" src="https://github.com/vessoutraore/Terraform/assets/126578500/3bc4cfc3-ac59-4d15-b780-7f6705543370">
 
 4. Ensuite tu exécute cette commande : **$ export TF_LOG="TRACE"**
-5. Ensuite l'initialiser le repertoire de travail de terraform en utilisant la comme : **terraform init**
+5. Ensuite l'initialiser le repertoire de travail de terraform en utilisant la comme : **$ terraform init**
 
 
 ## Configuration d'AWS pour terraform 
 
+### Création d'un utilisateur IAM (console)
+1. Connectez-vous à votre compte AWS
+2. Sur la page d'accueil de la console, sélectionnez le service IAM.
+3. Dans le volet de navigation, sélectionnez Utilisateurs,
 
+<img width="964" alt="Utilisateur" src="https://github.com/vessoutraore/Terraform/assets/126578500/47c63e54-80a3-4265-8781-8f012f3c484f">
+
+puis créer un utilisateur.
+
+<img width="917" alt="createuser" src="https://github.com/vessoutraore/Terraform/assets/126578500/9d4889d2-2b1b-4084-b448-0b9f15f9a1d1">
+
+5. Sur la page Spécifier les détails de l'utilisateur, sous Détails de l'utilisateur, dans Nom d'utilisateur, entrez le nom du nouvel utilisateur. Il s'agit de son nom de connexion pour AWS.
+
+<img width="927" alt="usertype" src="https://github.com/vessoutraore/Terraform/assets/126578500/ed13c2ba-85f6-4a39-bd6e-efb1a98b1dbf">
+
+**Note:** Sélectionnez **Fournir aux utilisateurs l'accès à la console de gestion AWS facultatif** Cela génère des informations d'identification de AWS Management Console pour le nouvel utilisateur.
+
+sélectionnez Je souhaite créer un utilisateur IAM et poursuivez cette procédure.
+
+Pour Mot de passe de la console, sélectionnez l'une des options suivantes :
+
+Mot de passe généré automatiquement – L'utilisateur obtient un mot de passe généré de façon aléatoire qui correspond à la politique de mot de passe de compte. Vous pouvez afficher ou télécharger le mot de passe lorsque vous accédez à la page Récupérer le mot de passe.
+
+Mot de passe personnalisé – L'utilisateur se voit attribuer le mot de passe que vous entrez dans la zone.
+
+(Facultatif) L'option Les utilisateurs doivent créer un nouveau mot de passe à leur prochaine connexion (recommandée) est sélectionnée par défaut afin d'obliger l'utilisateur à changer son mot de passe lors de sa première connexion
+
+<img width="885" alt="ProgramGroup" src="https://github.com/vessoutraore/Terraform/assets/126578500/e751e6b9-e3f5-403d-99ce-dc615aa28d4b">
+
+6. Sélectionnez Suivant.
+7. Création de groupe
+
+<img width="629" alt="creategroup" src="https://github.com/vessoutraore/Terraform/assets/126578500/4b727700-4b2d-4025-83c9-2008b8c041e0">
+
+Puis donnez lui une autorisation comme suit :
+
+<img width="612" alt="TerraformAcces" src="https://github.com/vessoutraore/Terraform/assets/126578500/0fb1410c-8123-4a87-beea-3ffc0687e5a7">
+
+8. Enfin cliquez sur créer un utilisateur en télécharger vos informations ou à défaut envoyez les informations par email.
