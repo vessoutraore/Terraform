@@ -182,7 +182,7 @@ Pour Ce faire vous allez utiliser ce code Terraform pour configurer un fournisse
 
 pour l'ami, vous pouvez consulter le lien suivant : https://cloud-images.ubuntu.com/locator/ec2/
 
-### Création d'une clé d'accès AWS pour terraform
+3. **Création d'une clé d'accès AWS pour terraform**
 1. Rendez-vous dans la console puis dans utilisateurs
    
 <img width="909" alt="Creationdunekey" src="https://github.com/vessoutraore/Terraform/assets/126578500/c99a786a-664c-4996-af14-3c4f9216d4a5">
@@ -199,5 +199,11 @@ pour l'ami, vous pouvez consulter le lien suivant : https://cloud-images.ubuntu.
 
 4. Puis terminer 
 
+4. **Exécution des commandes** :
+**$ terraform init & $ terraform apply**
+
+Une fois exécuté, vous pouvez aller dans la EC2 d'aws pour votre l'instance qui a été créée. 
+
+<img width="779" alt="creationdinstance" src="https://github.com/vessoutraore/Terraform/assets/126578500/fba28548-dc66-4a9f-a5bc-d4509f0dab9e">
 
 
