@@ -94,5 +94,8 @@ NB : AWS et Azure. Ces fournisseurs seront utilisés pour créer, modifier et g�
 
 4. Ensuite tu exécute cette commande : **$ export TF_LOG="TRACE"**
 5. Ensuite l'initialiser le repertoire de travail de terraform en utilisant la comme : **terraform init**
-   
+
+
+## Configuration d'AWS pour terraform 
+
 
