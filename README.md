@@ -111,8 +111,6 @@ puis créer un utilisateur.
 
 5. Sur la page Spécifier les détails de l'utilisateur, sous Détails de l'utilisateur, dans Nom d'utilisateur, entrez le nom du nouvel utilisateur. Il s'agit de son nom de connexion pour AWS.
 
-<img width="927" alt="usertype" src="https://github.com/vessoutraore/Terraform/assets/126578500/ed13c2ba-85f6-4a39-bd6e-efb1a98b1dbf">
-
 **Note:** Sélectionnez **Fournir aux utilisateurs l'accès à la console de gestion AWS facultatif** Cela génère des informations d'identification de AWS Management Console pour le nouvel utilisateur.
 
 sélectionnez Je souhaite créer un utilisateur IAM et poursuivez cette procédure.
@@ -137,3 +135,5 @@ Puis donnez lui une autorisation comme suit :
 <img width="612" alt="TerraformAcces" src="https://github.com/vessoutraore/Terraform/assets/126578500/0fb1410c-8123-4a87-beea-3ffc0687e5a7">
 
 8. Enfin cliquez sur créer un utilisateur en télécharger vos informations ou à défaut envoyez les informations par email.
+
+<img width="636" alt="télécharger" src="https://github.com/vessoutraore/Terraform/assets/126578500/1102fa8e-f2f5-4660-860e-284c025ae03b">
