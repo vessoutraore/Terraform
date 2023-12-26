@@ -225,11 +225,13 @@ Nous pouvons aussi utiliser la commande : **terraform apply "terraformplan.out"*
 Il est possible d'exporter les références AWS dans une variable d'environnement au lieu de mettre dans le fichier comme :
 
 ```#### Set AWS environment variables
+
 export AWS_ACCESS_KEY_ID="your-access-key"
 export AWS_SECRET_ACCESS_KEY="your-secret-key"
 export AWS_DEFAULT_REGION="your-region"
 
 #### Display AWS environment variables
+
 env | grep -i aws```
 
 
