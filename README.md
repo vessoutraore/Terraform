@@ -224,12 +224,40 @@ Nous pouvons aussi utiliser la commande : **terraform apply "terraformplan.out"*
 
 Il est possible d'exporter les références AWS dans une variable d'environnement au lieu de mettre dans le fichier comme :
 
-```#### Set AWS environment variables
+```
+#### Set AWS environment variables
 export AWS_ACCESS_KEY_ID="your-access-key"
 export AWS_SECRET_ACCESS_KEY="your-secret-key"
 export AWS_DEFAULT_REGION="your-region"
 
 #### Display AWS environment variables
 env | grep -i aws
+```
 
 ### Création de plusieurs instances
+
+Pour créer plusieurs instances, on procède comme suit : 
+
+```hcl
+resource "aws_instance" "MyFirstInstance" {
+  count         = 3
+  ami           = "ami-05692172625678b4e"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "demoinstance-${count.index}"
+  }
+}
+```
+
+- `resource "aws_instance" "MyFirstInstance"` : Cela définit une ressource AWS de type "aws_instance" avec le nom logique "MyFirstInstance". Vous pouvez référencer cette instance en utilisant `aws_instance.MyFirstInstance`.
+
+- `count = 3` : Spécifie que trois instances EC2 identiques seront créées. Le compteur `count.index` peut être utilisé pour différencier ces instances lors de la création de balises (tags) uniques.
+
+- `ami = "ami-05692172625678b4e"` : Indique l'AMI (Amazon Machine Image) à utiliser pour les instances. Dans cet exemple, il s'agit d'une AMI spécifique.
+
+- `instance_type = "t2.micro"` : Spécifie le type d'instance EC2 à créer, ici une instance de type "t2.micro". C'est un type d'instance de faible capacité destiné à un usage léger.
+
+- `tags` : Cela permet de spécifier des balises (tags) pour chaque instance. Dans cet exemple, une balise "Name" est créée avec la valeur "demoinstance-" suivie de l'index du compteur (`count.index`). Cela signifie que les instances seront nommées "demoinstance-0", "demoinstance-1", et "demoinstance-2".
+
+Ce code Terraform crée trois instances EC2 identiques, mais chaque instance est différenciée par une balise unique basée sur l'index du compteur, assurant ainsi des noms uniques pour chaque instance.
