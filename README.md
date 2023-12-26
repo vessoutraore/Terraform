@@ -209,3 +209,27 @@ Une fois exécuté, vous pouvez aller dans la EC2 d'aws pour votre l'instance qu
 Pour la détruire, on utilise la commande : **terraform destroy**
 
 <img width="744" alt="destroy" src="https://github.com/vessoutraore/Terraform/assets/126578500/09bb9f78-0b45-45d3-96ce-90393e274e65">
+
+En production, il est toujours recommandé d'utiliser la commande **terraform plan** pour visualiser votre configuration avant l'exécution.
+
+Pour avoir le contenu de terraform plan dans un fichier, il faut la commande **terraform plan --out 'nom du fichier.out'**
+
+<img width="634" alt="out" src="https://github.com/vessoutraore/Terraform/assets/126578500/5405e149-5a26-44de-8280-19daf93509d9">
+
+Nous pouvons aussi utiliser la commande : **terraform apply "terraformplan.out"** pour créer une instance.
+
+<img width="752" alt="terraformplanout" src="https://github.com/vessoutraore/Terraform/assets/126578500/05ffc21c-b917-4243-87dc-79cae7dd022c">
+
+### Fournir des références dans une variable d'environnement
+
+Il est possible d'exporter les références AWS dans une variable d'environnement au lieu de mettre dans le fichier comme :
+
+#### Set AWS environment variables
+export AWS_ACCESS_KEY_ID="your-access-key"
+export AWS_SECRET_ACCESS_KEY="your-secret-key"
+export AWS_DEFAULT_REGION="your-region"
+
+#### Display AWS environment variables
+env | grep -i aws
+
+
