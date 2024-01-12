@@ -260,4 +260,6 @@ resource "aws_instance" "MyFirstInstance" {
 
 - `tags` : Cela permet de spécifier des balises (tags) pour chaque instance. Dans cet exemple, une balise "Name" est créée avec la valeur "demoinstance-" suivie de l'index du compteur (`count.index`). Cela signifie que les instances seront nommées "demoinstance-0", "demoinstance-1", et "demoinstance-2".
 
-Ce code Terraform crée trois instances EC2 identiques, mais chaque instance est différenciée par une balise unique basée sur l'index du compteur, assurant ainsi des noms uniques pour chaque instance.
+Ce code Terraform crée trois instances EC2 identiques, mais chaque instance est différenciée par une balise unique basée sur l'index du compteur, assurant ainsi des noms uniques pour chaque instance. voir captures écrans
+<img width="745" alt="creationMultiplesInstances" src="https://github.com/vessoutraore/Terraform/assets/126578500/bd2bb59a-d96e-40e5-ac61-2ff7bd4938c6">
+
